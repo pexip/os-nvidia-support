@@ -1,0 +1,62 @@
+Source: nvidia-support
+Section: contrib/misc
+Priority: optional
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders:
+ Andreas Beckmann <anbe@debian.org>,
+ Luca Boccassi <bluca@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ po-debconf,
+Rules-Requires-Root: no
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/nvidia-team/nvidia-support
+Vcs-Git: https://salsa.debian.org/nvidia-team/nvidia-support.git
+
+Package: nvidia-support
+Architecture: amd64 i386 armhf arm64 ppc64el
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: NVIDIA binary graphics driver support files
+ This package contains support files needed for all current and legacy
+ versions of the non-free NVIDIA graphics drivers. These include scripts
+ used for warning about a mismatching version of the kernel module.
+
+Package: nvidia-installer-cleanup
+Architecture: amd64 i386 armhf arm64 ppc64el
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Conflicts:
+# Ubuntu (virtual) packages
+ nvidia-current,
+ nvidia-current-updates,
+ nvidia-driver-binary,
+Description: cleanup after driver installation with the nvidia-installer
+ This package ensures that no remnants of the non-free NVIDIA graphics
+ drivers that were installed with the nvidia-installer remain on the
+ system. Such an installation conflicts with the packaged drivers.
+ .
+ Furthermore using the nvidia-installer to install a new version of the
+ drivers is prevented as long as this package is installed.
+
+Package: nvidia-kernel-common
+Section: contrib/kernel
+Architecture: amd64 i386 armhf arm64 ppc64el
+Pre-Depends: ${misc:Pre-Depends}
+Depends:
+ ${misc:Depends}
+Breaks:
+ nvidia-legacy-304xx-kernel-support (<< 305),
+ nvidia-legacy-340xx-kernel-support (<< 340.108-12~),
+ nvidia-legacy-390xx-kernel-support (<< 390.147),
+ nvidia-kernel-support (<< 470.86),
+ nvidia-tesla-418-kernel-support (<< 418.226.00-2~),
+ nvidia-tesla-440-kernel-support (<< 441),
+ nvidia-tesla-450-kernel-support (<< 450.172.01),
+ nvidia-tesla-460-kernel-support (<< 460.106.00-2~),
+ nvidia-tesla-470-kernel-support (<< 470.103.01),
+Description: NVIDIA binary kernel module support files
+ This package contains support files used for any version of the NVIDIA
+ kernel module. It sets up udev and ConsoleKit rules, ensures the NVIDIA
+ control device is created, and performs any other tasks required for the
+ module to work properly.

@@ -1,0 +1,194 @@
+# Copyright (C) 2011 Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+# This file is distributed under the same license as nvidia-support package.
+# Hideki Yamane <henrich@debian.org>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nvidia-support 20130505+1\n"
+"Report-Msgid-Bugs-To: nvidia-support@packages.debian.org\n"
+"POT-Creation-Date: 2012-09-07 18:52-0400\n"
+"PO-Revision-Date: 2012-09-08 07:52+0900\n"
+"Last-Translator: Hideki Yamane <henrich@debian.org>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:2001
+msgid "Run \"nvidia-installer --uninstall\"?"
+msgstr "「nvidia-installer --uninstall」を実行しますか?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:2001
+msgid ""
+"The nvidia-installer program was found on this system. This is probably left "
+"over from an earlier installation of the non-free NVIDIA graphics driver, "
+"installed using the NVIDIA *.run file directly. This installation is "
+"incompatible with the Debian packages. To install the Debian packages "
+"safely, it is therefore necessary to undo the changes performed by nvidia-"
+"installer."
+msgstr ""
+"nvidia-installer プログラムがシステム上に見つかりました。これはおそらく、以前"
+"に non-free の NVIDIA グラフィックドライバを *.run ファイルを使って直接インス"
+"トールした時のものが残されているのだと思われます。こうしてインストールされたも"
+"のは Debian パッケージとは互換性がありません。Debian パッケージを安全にインス"
+"トールするには、nvidia-installer によって行なわれた変更を巻き戻す必要がありま"
+"す。"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:3001
+msgid "Delete nvidia-installer files?"
+msgstr "nvidia-installer ファイルを削除しますか?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:3001
+msgid ""
+"Some files from the nvidia-installer program still remain on this system. "
+"These probably come from an earlier installation of the non-free NVIDIA "
+"graphics driver using the *.run file directly. Running the uninstallation "
+"procedure may have failed and left these behind. These files conflict with "
+"the packages providing the non-free NVIDIA graphics driver and must be "
+"removed before the package installation can continue."
+msgstr ""
+"nvidia-installer プログラムからのファイルが、まだいくつかシステムに残っていま"
+"す。これはおそらく、以前に non-free の NVIDIA グラフィックドライバを *.run "
+"ファイルを使って直接インストールした時のものが残されているのだと思われます。"
+"アンインストール作業の実行が失敗して、これらが残されているのでしょう。これらの"
+"ファイルは、パッケージが提供する non-free の NVIDIA グラフィックドライバと衝突"
+"するので、パッケージのインストールを続行する前に削除しておく必要があります。"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid "Remove conflicting library files?"
+msgstr "衝突しているライブラリファイルを削除しますか?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid ""
+"The following libraries were found on this system and conflict with the "
+"current installation of the NVIDIA graphics drivers:"
+msgstr ""
+"システムに以下のライブラリが見つかりました。以下は、現在インストールしようと"
+"している NVIDIA グラフィックドライバと衝突します:"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid ""
+"These libraries are most likely remnants of an old installation using the "
+"nvidia-installer program and do not belong to any package managed by dpkg. "
+"It should be safe to delete them."
+msgstr ""
+"これらのライブラリは、おそらくは nvidia-installer プログラムを使った過去のイン"
+"ストールの残骸で、dpkg によって管理されているどのパッケージにも属していません。"
+"削除する方が安全です。"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid "Mismatching nvidia kernel module loaded"
+msgstr "ロードした nvidia カーネルモジュールが一致しません"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid ""
+"The NVIDIA driver that is being installed (version ${new-version}) does not "
+"match the nvidia kernel module currently loaded (version ${running-version})."
+msgstr ""
+"インストールされている NVIDIA ドライバ (バージョン ${new-version}) が現在ロー"
+"ドされている nvidia カーネルモジュール (バージョン ${running-version}) と一致"
+"しません。"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid "The X server, OpenGL, and GPGPU applications may not work properly."
+msgstr ""
+"X サーバや OpenGL、GPGPU アプリケーションが適切に機能しないかもしれません。"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid ""
+"The easiest way to fix this is to reboot the machine once the installation "
+"has finished. You can also stop the X server (usually by stopping the login "
+"manager, e.g. gdm3, sddm, or xdm), manually unload the module (\"modprobe -r nvidia"
+"\"), and restart the X server."
+msgstr ""
+"これを修正する最も簡単な方法はインストール完了後にマシンを再起動することです。"
+"X サーバを停止 (通常はログインマネージャ、例えば gdm3 や sddm、xdm を停止すれば"
+"停止されます) して手作業でモジュールをアンロード (「modprobe -r nvidia」) し、X サー"
+"バを再起動する方法もあります。"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid "Conflicting nouveau kernel module loaded"
+msgstr "ロードした nouveau カーネルモジュールが衝突"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid ""
+"The free nouveau kernel module is currently loaded and conflicts with the "
+"non-free nvidia kernel module."
+msgstr ""
+"フリーの nouveau カーネルモジュールが現在ロードされていますが non-free の "
+"nvidia カーネルモジュールと衝突しています。"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid ""
+"The easiest way to fix this is to reboot the machine once the installation "
+"has finished."
+msgstr ""
+"これを修正する最も簡単な方法はインストール完了後にマシンを再起動することです。"
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid "Manual configuration required to enable NVIDIA driver"
+msgstr "NVIDIA ドライバの有効化には手作業による設定が必要です"
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid ""
+"The NVIDIA driver is not yet configured; it needs to be enabled in xorg.conf "
+"before it can be used."
+msgstr ""
+"NVIDIA ドライバはまだ設定されていません。使えるようにするには xorg.conf での有"
+"効化が必要です。"
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid "Please see the package documentation for instructions."
+msgstr "手順についてはパッケージ文書を見てください。"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:8001
+msgid "NVIDIA driver is still enabled in xorg.conf"
+msgstr "NVIDIA ドライバがまだ xorg.conf で有効になっています"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:8001
+msgid ""
+"The NVIDIA driver was just removed, but it is still enabled in the Xorg "
+"configuration. X cannot be (re-)started successfully until NVIDIA is "
+"disabled in the following config file(s):"
+msgstr ""
+"NVIDIA ドライバが先ほど削除されましたが Xorg の設定ではまだ有効になっていま"
+"す。以下の設定ファイルで NVIDIA を無効化するまで X はうまく (再) 起動しません:"

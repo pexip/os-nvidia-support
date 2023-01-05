@@ -1,0 +1,3 @@
+alternate-install-present		usr/lib/nvidia/
+pre-install				usr/lib/nvidia/
+check-for-conflicting-opengl-libraries	usr/lib/nvidia/

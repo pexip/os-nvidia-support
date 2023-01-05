@@ -1,0 +1,200 @@
+# Turkish translation of nvidia-support debconf template.
+# Copyright (C) 2012
+# This file is distributed under the same license as the nvidia-support package.
+#
+# Mert Dirik <mertdirik@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: nvidia-support 20111111+2\n"
+"Report-Msgid-Bugs-To: nvidia-support@packages.debian.org\n"
+"POT-Creation-Date: 2012-09-07 18:52-0400\n"
+"PO-Revision-Date: 2014-08-12 00:04+0200\n"
+"Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
+"Language-Team: Turkish <debian-l10n-turkish@lists.debian.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:2001
+msgid "Run \"nvidia-installer --uninstall\"?"
+msgstr "\"nvidia-installer --uninstall\" komutu çalıştırılsın mı?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:2001
+msgid ""
+"The nvidia-installer program was found on this system. This is probably left "
+"over from an earlier installation of the non-free NVIDIA graphics driver, "
+"installed using the NVIDIA *.run file directly. This installation is "
+"incompatible with the Debian packages. To install the Debian packages "
+"safely, it is therefore necessary to undo the changes performed by nvidia-"
+"installer."
+msgstr ""
+"Sisteminizde 'nvidia-installer' programı bulundu.  Bu program muhtemelen, "
+"doğrudan NVIDIA'nın *.run dosyası kullanılarak yapılmış eski bir özgür "
+"olmayan NVIDIA grafik sürücüsü kurulumundan kalma bir programdır. Bu kurulum "
+"Debian paketleriyle uyumlu değildir. Debian paketlerinin düzgün bir şekilde "
+"kurulabilmesi için öncelikle 'nvidia-installer'ın yaptığı değişiklikler geri "
+"alınmalıdır."
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:3001
+msgid "Delete nvidia-installer files?"
+msgstr "'nvidia-installer' dosyaları silinsin mi?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:3001
+msgid ""
+"Some files from the nvidia-installer program still remain on this system. "
+"These probably come from an earlier installation of the non-free NVIDIA "
+"graphics driver using the *.run file directly. Running the uninstallation "
+"procedure may have failed and left these behind. These files conflict with "
+"the packages providing the non-free NVIDIA graphics driver and must be "
+"removed before the package installation can continue."
+msgstr ""
+"Sisteminizde hâlâ \"nvidia-installer\"dan arta kalmış bazı dosyalar "
+"bulunuyor. Bu dosyalar muhtemelen özgür olmayan NVIDIA grafik sürücüsünün "
+"doğrudan *.run dosyası kullanılarak yapılmış eski bir kurulumundan kalma "
+"dosyalardır.  Kaldırma süreci başarısız olmuş ve arkasında bu dosyaları "
+"bırakmış olabilir. Bu dosyalar özgür olmayan NVIDIA grafik sürücüsünün "
+"paketleriyle çakışmaktadır ve paket kurulumuna devam edilmeden önce "
+"kaldırılmalıdır."
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid "Remove conflicting library files?"
+msgstr "Çakışan kitaplık dosyaları kaldırılsın mı?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid ""
+"The following libraries were found on this system and conflict with the "
+"current installation of the NVIDIA graphics drivers:"
+msgstr ""
+"Sisteminizde aşağıdaki kitaplıklar bulundu. Bu kitaplıklar NVIDIA grafik "
+"sürücüsünün mevcut kurulumuyla çakışıyor:"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid ""
+"These libraries are most likely remnants of an old installation using the "
+"nvidia-installer program and do not belong to any package managed by dpkg. "
+"It should be safe to delete them."
+msgstr ""
+"Bu kitaplıklar büyük olasılıkla nvidia-installer'ı kullanan eski bir "
+"kurulumun kalıntılarıdır ve dpkg aracılığıyla yönetilen hiçbir pakete ait "
+"değildir. Bu kitaplıkları silmek tehlikesizdir."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid "Mismatching nvidia kernel module loaded"
+msgstr "Uyumsuz nvidia çekirdek modülü yüklendi"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid ""
+"The NVIDIA driver that is being installed (version ${new-version}) does not "
+"match the nvidia kernel module currently loaded (version ${running-version})."
+msgstr ""
+"Kurulan nvidia sürücüsü (sürüm ${new-version}) şu an yüklü durumda olan "
+"nvidia çekirdek modülleri ile (sürüm ${running-version}) uyuşmuyor."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid "The X server, OpenGL, and GPGPU applications may not work properly."
+msgstr "X sunucusu, OpenGL veya GPGPU uygulamaları düzgün çalışmayabilir."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid ""
+"The easiest way to fix this is to reboot the machine once the installation "
+"has finished. You can also stop the X server (usually by stopping the login "
+"manager, e.g. gdm3, sddm, or xdm), manually unload the module (\"modprobe -r nvidia"
+"\"), and restart the X server."
+msgstr ""
+"Bu durumu düzeltmenin en kolay yolu kurulum tamamlandıktan sonra makineyi "
+"yeniden başlatmaktır. Makineyi yeniden başlatmak yerine X sunucusunu "
+"durdurup (genelde oturum açma yöneticisini durdurarak; gdm3, sddm ya da xdm "
+"gibi), nvidia modülünü kaldırdıktan sonra (modprobe -r nvidia) X sunucusunu "
+"yeniden başlatabilirsiniz."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid "Conflicting nouveau kernel module loaded"
+msgstr "Çakışan nouveau çekirdek modülü yüklendi"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid ""
+"The free nouveau kernel module is currently loaded and conflicts with the "
+"non-free nvidia kernel module."
+msgstr ""
+"Şu an özgür nouveau çekirdek modülü yüklü durumda ve bu modül özgür olmayan "
+"nvidia çekirdek modülüyle çakışıyor."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid ""
+"The easiest way to fix this is to reboot the machine once the installation "
+"has finished."
+msgstr ""
+"Bu durumu düzeltmenin en kolay yolu kurulum tamamlandıktan sonra makineyi "
+"yeniden başlatmaktır."
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid "Manual configuration required to enable NVIDIA driver"
+msgstr "NVIDIA sürücüsünü etkinleştirmek elle yapılandırma gerektiriyor"
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid ""
+"The NVIDIA driver is not yet configured; it needs to be enabled in xorg.conf "
+"before it can be used."
+msgstr ""
+"NVIDIA sürücüsü henüz yapılandırılmadı. Sürücüyü kullanmaya başlamadan önce "
+"xorg.conf sürücünün dosyasında etkinleştirilmesi gerekiyor."
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid "Please see the package documentation for instructions."
+msgstr "Yönergeler için paket belgelendirmesine göz atın."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:8001
+msgid "NVIDIA driver is still enabled in xorg.conf"
+msgstr "NVIDIA sürücüsü xorg.conf dosyasında hâlâ etkin durumda"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:8001
+msgid ""
+"The NVIDIA driver was just removed, but it is still enabled in the Xorg "
+"configuration. X cannot be (re-)started successfully until NVIDIA is "
+"disabled in the following config file(s):"
+msgstr ""
+"NVIDIA sürücüsü kaldırıldı, fakat Xorg yapılandırmasında hâlâ etkin durumda. "
+"NVIDIA sürücüsü aşağıdaki yapılandırma dosyalarında devre dışı bırakılana "
+"kadar X sunucusu (yeniden) başlatılamaz:"
