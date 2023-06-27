@@ -31,6 +31,9 @@ Conflicts:
  nvidia-current,
  nvidia-current-updates,
  nvidia-driver-binary,
+Breaks:
+ nvidia-tesla-418-kernel-dkms (<< 418.226.00-9~),
+ nvidia-tesla-460-kernel-dkms (<< 460.106.00-9~),
 Description: cleanup after driver installation with the nvidia-installer
  This package ensures that no remnants of the non-free NVIDIA graphics
  drivers that were installed with the nvidia-installer remain on the
