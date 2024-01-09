@@ -7,7 +7,9 @@ Uploaders:
  Luca Boccassi <bluca@debian.org>,
 Build-Depends:
  debhelper-compat (= 13),
+ pkgconf,
  po-debconf,
+ systemd-dev,
 Rules-Requires-Root: no
 Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/nvidia-team/nvidia-support

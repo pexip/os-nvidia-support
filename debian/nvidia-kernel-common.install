@@ -1,2 +1,2 @@
 nvidia_helper.ck /usr/lib/ConsoleKit/run-seat.d/
-nvidia_helper /lib/udev/
+nvidia_helper ${env:deb_udevdir}
