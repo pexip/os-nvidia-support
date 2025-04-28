@@ -1,0 +1,211 @@
+# Mesajele în limba română pentru pachetul nvidia-support (debconf).
+# Romanian translation of nvidia-support (debconf).
+# Copyright © 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nvidia-support package.
+#
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nvidia-support\n"
+"Report-Msgid-Bugs-To: nvidia-support@packages.debian.org\n"
+"POT-Creation-Date: 2017-12-17 21:08+0100\n"
+"PO-Revision-Date: 2023-12-12 12:57+0100\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && "
+"n%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:2001
+msgid "Run \"nvidia-installer --uninstall\"?"
+msgstr "Doriți să executați «nvidia-installer --uninstall»?"
+
+# R-GC, scrie:
+# folosesc, driver → controlor, la fel ca alte echipe latine, și la fel precum unii autori de „drivere”,
+# numesc ei însuși „creația” lor.
+# Termenul folosit de francezi, „pilot”, îl consider
+# forțat și inadecvat pentru descrierea a ceea ce
+# este/face.
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:2001
+msgid ""
+"The nvidia-installer program was found on this system. This is probably left "
+"over from an earlier installation of the non-free NVIDIA graphics driver, "
+"installed using the NVIDIA *.run file directly. This installation is "
+"incompatible with the Debian packages. To install the Debian packages "
+"safely, it is therefore necessary to undo the changes performed by nvidia-"
+"installer."
+msgstr ""
+"Programul «nvidia-installer» a fost găsit pe acest sistem. Acesta este "
+"probabil o rămășiță de la o instalare anterioară a controlorului grafic "
+"NVIDIA care nu este liber; instalat folosind direct fișierul „NVIDIA *.run”. "
+"Această instalare este incompatibilă cu pachetele Debian. Pentru a instala "
+"pachetele Debian în condiții de siguranță, este necesar, prin urmare, să "
+"anulați modificările efectuate de programul «nvidia-installer»."
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:3001
+msgid "Delete nvidia-installer files?"
+msgstr "Doriți să ștergeți fișierele programului «nvidia-installer»?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:3001
+msgid ""
+"Some files from the nvidia-installer program still remain on this system. "
+"These probably come from an earlier installation of the non-free NVIDIA "
+"graphics driver using the *.run file directly. Running the uninstallation "
+"procedure may have failed and left these behind. These files conflict with "
+"the packages providing the non-free NVIDIA graphics driver and must be "
+"removed before the package installation can continue."
+msgstr ""
+"Unele fișiere din programul «nvidia-installer» au rămas încă pe acest "
+"sistem. Acestea provin probabil de la o instalare anterioară a controlorului "
+"grafic NVIDIA non-liber, folosind direct fișierul „*.run”. Este posibil ca "
+"rularea procedurii de dezinstalare să fi eșuat și să le fi lăsat în urmă. "
+"Aceste fișiere intră în conflict cu pachetele care furnizează controlorul "
+"grafic NVIDIA non-liber și trebuie eliminate înainte ca instalarea "
+"pachetelor să poată continua."
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid "Remove conflicting library files?"
+msgstr "Doriți să eliminați fișierele de bibliotecă conflictuale?"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid ""
+"The following libraries were found on this system and conflict with the "
+"current installation of the NVIDIA graphics drivers:"
+msgstr ""
+"Următoarele biblioteci au fost găsite pe acest sistem și intră în conflict "
+"cu instalarea curentă a controlorilor grafici NVIDIA:"
+
+#. Type: boolean
+#. Description
+#: ../nvidia-installer-cleanup.templates:4001
+msgid ""
+"These libraries are most likely remnants of an old installation using the "
+"nvidia-installer program and do not belong to any package managed by dpkg. "
+"It should be safe to delete them."
+msgstr ""
+"Cel mai probabil, aceste biblioteci sunt rămășițe ale unei instalări vechi "
+"realizate cu ajutorul programului «nvidia-installer» și nu fac parte din "
+"niciun pachet gestionat de «dpkg». Ar trebui să poată fi șterse în siguranță."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid "Mismatching nvidia kernel module loaded"
+msgstr "Modulul Nvidia încărcat în nucleu nu coincide"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid ""
+"The NVIDIA driver that is being installed (version ${new-version}) does not "
+"match the nvidia kernel module currently loaded (version ${running-version})."
+msgstr ""
+"Controlorul Nvidia care este instalat (versiunea ${new-version}) nu se "
+"potrivește cu modulul nvidia din nucleu încărcat în prezent (versiunea "
+"${running-version})."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid "The X server, OpenGL, and GPGPU applications may not work properly."
+msgstr ""
+"Este posibil ca aplicațiile server X, OpenGL și GPGPU să nu funcționeze "
+"corect."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:4001
+msgid ""
+"The easiest way to fix this is to reboot the machine once the installation "
+"has finished. You can also stop the X server (usually by stopping the login "
+"manager, e.g. gdm3, sddm, or xdm), manually unload the module (\"modprobe -r "
+"nvidia\"), and restart the X server."
+msgstr ""
+"Cel mai simplu mod de a remedia acest lucru este să reporniți mașina după ce "
+"instalarea s-a terminat. De asemenea, puteți opri serverul X (de obicei, "
+"prin oprirea managerului de autentificare, de exemplu, «gdm3», «sddm» sau "
+"«xdm»), descărcați manual modulul din nucleu rulând comanda «modprobe -r "
+"nvidia» și reporniți serverul X."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid "Conflicting nouveau kernel module loaded"
+msgstr "Modulul nouveau încărcat în nucleu cauzează conflicte"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid ""
+"The free nouveau kernel module is currently loaded and conflicts with the "
+"non-free nvidia kernel module."
+msgstr ""
+"Modulul liber nouveau care este încărcat în prezent în nucleu intră în "
+"conflict cu modulul non-liber nvidia."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:5001
+msgid ""
+"The easiest way to fix this is to reboot the machine once the installation "
+"has finished."
+msgstr ""
+"Cel mai simplu mod de a remedia acest lucru este să reporniți mașina după ce "
+"s-a terminat instalarea."
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid "Manual configuration required to enable NVIDIA driver"
+msgstr "Este necesară o configurare manuală pentru a activa controlorul Nvidia"
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid ""
+"The NVIDIA driver is not yet configured; it needs to be enabled in xorg.conf "
+"before it can be used."
+msgstr ""
+"Controlorul NVIDIA nu este încă configurat; acesta trebuie activat în "
+"fișierul „/etc/X11/xorg.conf” înainte de a putea fi utilizat."
+
+#. Type: note
+#. Description
+#: ../nvidia-support.templates:6001
+msgid "Please see the package documentation for instructions."
+msgstr "Pentru instrucțiuni, consultați documentația pachetului."
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:8001
+msgid "NVIDIA driver is still enabled in xorg.conf"
+msgstr "Controlorul Nvidia este încă activat în xorg.conf"
+
+#. Type: error
+#. Description
+#: ../nvidia-support.templates:8001
+msgid ""
+"The NVIDIA driver was just removed, but it is still enabled in the Xorg "
+"configuration. X cannot be (re-)started successfully until NVIDIA is "
+"disabled in the following config file(s):"
+msgstr ""
+"Controlorul Nvidia tocmai a fost eliminat, dar este încă activat în "
+"configurația Xorg. X nu poate fi (re)pornit cu succes până când NVIDIA nu "
+"este dezactivat în următoarele fișiere de configurare:"

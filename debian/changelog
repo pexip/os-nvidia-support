@@ -1,3 +1,13 @@
+nvidia-support (20240109+1) unstable; urgency=medium
+
+  [ Chris Hofstaedtler ]
+  * Delegate placement of udev files to udev.pc.  (Closes: #1057741)
+
+  [ Debconf translations ]
+  * Romanian (ro): Remus-Gabriel Chelu.  (Closes: #1059475)
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 09 Jan 2024 13:30:36 +0100
+
 nvidia-support (20220217+3~deb12u1+pexip24u2) pexip; urgency=medium
 
   * Rebuild for move to gpu
